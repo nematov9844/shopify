@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shopify</title>
+</head>
+
+<body>
+    <div class="nr w-full h-full  gap-2 flex-wrap bg-[#A5E3B9] p-3 flex justify-center items-center" id="modal">
+        <p>Start a free trial and enjoy 3 months of Shopify for $1/month on select plans.</p>
+        <button>Sign up now</button>
+        <button id="delete"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <header
+        class="nr flex h-[50px] md:h-[80px] relative justify-between md:w-full md:gap-10 items-center   text-white  bg-[#002D2D]">
+        <nav class="flex flex-col md:justify-between gap-4 md:items-center w-full md:flex-row md:w-full">
+            <div class="flex items-center gap-4">
+                <div><img src="./img/logo.svg" alt=""></div>
+                <ul class=" gap-4 hidden md:flex font-bold">
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Market</a></li>
+                    <li><a href="#">Manage</a></li>
+                </ul>
+            </div>
+            <div id="slideMenu"
+                class="flex flex-col px-4 md:p-0 justify-start gap-4 h-screen absolute top-[100%] w-1/2  font-bold left-[-100%]  bg-gradient-to-r from-[#008060] to-[#002d2d58] transition-all duration-300 md:static md:bg-transparent md:bg-gradient-to-t md:from-transparent md:to-transparent md:w-auto md:h-auto md:flex-row md:gap-4 md:items-center">
+                <ul class="flex flex-col gap-4 md:hidden">
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Market</a></li>
+                    <li><a href="#">Manage</a></li>
+                </ul>
+                <ul class="flex flex-col md:items-center gap-4 md:flex-row">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><button class="rounded-md ">Log in</button></li>
+                    <li><button class="bg-[#008060] rounded-md w-[120px] h-[45px]">Start free trial</button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="flex md:hidden h-full items-center">
+            <button id="menuToggle" class="md:hidden"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main class="flex flex-col gap-[40px]">
+        <section class="hero nr flex flex-col bg-[#002D2D] text-white md:flex-row justify-center items-center gap-4">
+            <div class="flex flex-col gap-4 w-full md:w-1/2">
+                <h1 class="text-3xl font-medium lg:text-6xl md:font-bold ">If you can dream it, you can sell it with
+                    Shopify</h1>
+                <p class="text-2xl lg:text-4xl">Build your business here. Take it anywhere.</p>
+                <div class="flex flex-col md:flex-row gap-4 md:items-center">
+                    <input type="text" class="w-full md:w-[200px] px-2 xl:w-[300px] xl:h-[45px] h-[35px] rounded-md "
+                        placeholder="Email address">
+                    <button class=" w-full md:w-[120px] xl:h-[45px]  bg-[#008060] h-[35px] rounded-md ">Start free
+                        trial</button>
+                </div>
+                <p class="md:text-lg ">Try Shopify free for 3 days, no credit card required. By entering your email, you
+                    agree to receive marketing emails from Shopify.</p>
+            </div>
+            <div>
+                <img src="https://s3-alpha-sig.figma.com/img/5a43/24f6/df484452199262332a735bd440551160?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FGzfaj~aEGhaRQYGHUPx~DxvYi9NiOEMihbJY-qPYNw4c5EYN~UAvVbmzCFTiPJDREbdtDRYlpzuzxBLbuANiD~mJkccQFxrYxv2IlSi9TgM5T68MGy2xWVPo7DrPQ-KQ~ftIUNXMhDSjTjm40vN7M-Lkxh33VENDq6TZFhR8KLiRHVSqIe7vFkjllzBzWy7xDY1Fm6pcokkt7AMb3ypdjrOsysEqim9RCK4ZhSeysnkVyQl7xo54DEZAfFGqTJZ9KTVDPb6xw8h1YsBH3jJLFvyM05BLuTBrZL8qg08oqQhGT3eOaowLGdf5kc0M8YoAnyfq97N9Ox09AqJr6TNHg__"
+                    alt="" width="100%">
+            </div>
+        </section>
+        <section class="nr flex flex-col gap-4">
+            <h1 class="text-3xl  w-full md:w-3/4 lg:w-1/2 md:text-6xl ">Discover why millions of entrepreneurs choose
+                Shopify to build their business—from Hello World to IPO.</h1>
+            <div class="w-full p-4 text-white rounded-xl bg-[#799102] h-[30vh] md:h-[50vh] ">
+                <p class="text-xl lg:text-2xl">Sense</p>
+                <p class="text-base lg:text-xl">by Shopify</p>
+            </div>
+        </section>
+        <section class="nr grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5">
+            <div class="flex flex-col gap-4 border-t-[4px]  border-[#939393]">
+                <h1 class="text-2xl md:text-3xl">Store builder</h1>
+                <p class="text-xl md:text-2xl">Bring your vision to life with our easy-to-use store creator. No coding
+                    expertise required—just your next big idea.</p>
+                <p class="md:text-2xl flex items-center text-[#008060] gap-2">Build the brand you want <span><i
+                            class="fa-solid fa-arrow-right"></i></span></p>
+            </div>
+            <div class="flex flex-col gap-4 border-t-[4px]  border-[#939393]">
+                <h1 class="text-2xl md:text-3xl">Themes</h1>
+                <p class="text-xl md:text-2xl">Select from hundreds of customizable templates crafted by a community of
+                    world-class designers.</p>
+                <p class="md:text-2xl flex items-center text-[#008060] gap-2">Explore more Themes<span><i
+                            class="fa-solid fa-arrow-right"></i></span></p>
+            </div>
+            <div class="flex flex-col gap-4 border-t-[4px]  border-[#939393]">
+                <h1 class="text-2xl md:text-3xl">App store</h1>
+                <p class="text-xl md:text-2xl">Add more features and functionality to your online store with app
+                    extensions from trusted Shopify partners..</p>
+                <p class="md:text-2xl flex items-center text-[#008060] gap-2">There’s an app for that <span><i
+                            class="fa-solid fa-arrow-right"></i></span></p>
+            </div>
+        </section>
+        <section class="nr flex flex-col gap-[30px]">
+            <div class=" grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-2xl md:text-3xl lg:text-5xl">Connect with customers everywhere</h1>
+                    <p class="text-xl md:text-2xl lg:text-4xl">Sell online, in person, or both with the marketing tools,
+                        social integrations, and sales channels you need to get your products in front of customers—and
+                        out the door.</p>
+                    <p class="text-xl lg:text-3xl flex items-center gap-2">Marketing made easy <span><i
+                                class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+                <div class="w-full flex justify-center">
+                    <img src="https://s3-alpha-sig.figma.com/img/fb1b/1d4b/9c9f3cdb97dd4f56b752c991821b2969?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p7wr4-76lu71K93m1BFeKuFeyX3UjGqStKbdx1gBzrRnmCTLEtMHpSonppGHnjvGsDc99aanehmhunLFHdKN2tgxotC1ZMuDmfHle24KVNQbB~Dseqp2Z1xJjRxmwhwxYBE7qTcDAnm53j7Obu4n5b-VfM0UMYcf5gyydCU35Cnh5VBaYaUCvdrat6PGZ3EtLA-E9Zg-9F-MEdQGubZc7LUd~m94Gq0HxvTjs6W0RwOaXF6ebOEvoxbf9M0u2rNWuBJZmjOH30zz0lSZ1bZZ~KN8epDWi~7-lCGfmFWKCa0CONIGGLvI5iglGLmZw6nmnZrPK5FcGSZTugl2lmtLkA__"
+                        alt="" class="w-[80%] h-full">
+                </div>
+            </div>
+            <div class=" grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div class="w-full flex justify-center">
+                    <img src="https://s3-alpha-sig.figma.com/img/d7c2/9fa9/ab1a9eebaa7f55231dccaa6df36dad32?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C352TJWxxqfR2jG3M9CmwOZiP2BVqRJpf86WOYacJbC0dzWrj0U94blnt0dxB7ZAnwD0U3HIiCNO95cWk8giFSMt7epOPcA-s3XlmbYki-Xq5f2dmvIDWC7fUulinN5B8-ve3~QB2wOqaHxMiw1JTMrJDbOtx9Q6Lo7NXevTpOLBrjWItsYXImMOqZfQIdTBH4Zd1Nxzg2Cw0J3S0DGm4l8CXm3jeuLdnAIlr2seEIENIWiCUmiPX~DMWN4HS5zUKp6R9Uj2vtkbl9vSP6tCUCbfQesR8cRn9FmXZ9VHvvoKaMuhcpx9qA70YqfOcT095hnxbA24v4o0lLdiIsuONA__"
+                        alt="" class="border-[#C6F0FC] border-[20px] sm:border-[40px] rounded-lg w-[80%] h-full">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-2xl md:text-3xl lg:text-5xl">Everything you need to succeed</h1>
+                    <p class="text-xl md:text-2xl lg:text-4xl">Manage inventory, track payments, and view real-time
+                        business insights from a single dashboard. We’ve built all the tools you need, so you can focus
+                        on building your business.</p>
+                    <p class="text-xl lg:text-3xl flex items-center gap-2">Do more from day one <span><i
+                                class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+
+            </div>
+            <div class=" grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-xl md:text-2xl lg:text-3xl">Meet the merchants who chose Shopify</h1>
+                    <p class="text-2xl md:text-4xl lg:text-6xl">“We’ve been able to build something in 3 years that a
+                        lot of brands haven’t actually gotten to in 10 years.”</p>
+                    <p class="text-xl md:text-2xl lg:text-3xl flex items-center gap-2">Chioma | Co-Founder & CEO</p>
+                </div>
+                <div class="w-full flex justify-center">
+                    <img src="https://s3-alpha-sig.figma.com/img/ede5/edbe/11e6a263918be1022b414e661dddd6ab?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KwO9~xuLoi27kUims1Y3gcKiJ94YiHyDfbhd-APKs9mwz0O5xBzmVIDnxQGTFIpDR56AQiEIZTDMe2fdNXnA2JG6wp1R9w2XoedNzIefVsnadOPa7CS1-eod3E2x5jB5ir0wBxg0hzIjH3bNwKPoI2fP58iXIf9OlKwOmPW49sCwvF1yW605~pbHY0l3EBuB3OYaT9aIx-6V4m8DDu4NAGPmPPYw9lIc9gAVctViFBMxZaK0kBPnCirmV4XbCH7TGwNaz-DJLQKdk3uvZdfwfY4BQ5hF-UgDegecLkKj9xDZMbrRZwjNM8M32PE9Oijj7lRykTsQ2xtvnX~ljDUxRA__"
+                        alt="" class="w-[80%] h-full">
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="nr grid grid-cols-1 p-0 md:grid-cols-2 bg-[#F8F8F8]  w-full">
+            <div class="flex flex-col gap-4 p-5">
+                <h1 class="text-xl md:text-2xl lg:text-3xl">The help you need, when you need it</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-xl md:text-2xl lg:text-3xl">Shopify Blog</h1>
+                        <p class="text-lg md:text-xl lg:text-2xl text-[#6B7177]">Get all the marketing and business
+                            strategy tips you need to help you run an online business.</p>
+                        <p class="text-lg md:text-xl lg:text-2xl flex items-center gap-2 text-[#6B7177]">Read<span><i
+                                    class="fa-solid fa-arrow-right"></i></span></p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-xl md:text-2xl lg:text-3xl">Shopify Blog</h1>
+                        <p class="text-lg md:text-xl lg:text-2xl text-[#6B7177]">Get all the marketing and business
+                            strategy tips you need to help you run an online business.</p>
+                        <p class="text-lg md:text-xl lg:text-2xl flex items-center gap-2 text-[#6B7177]">Read<span><i
+                                    class="fa-solid fa-arrow-right"></i></span></p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-xl md:text-2xl lg:text-3xl">Shopify Blog</h1>
+                        <p class="text-lg md:text-xl lg:text-2xl text-[#6B7177]">Get all the marketing and business
+                            strategy tips you need to help you run an online business.</p>
+                        <p class="text-lg md:text-xl lg:text-2xl flex items-center gap-2 text-[#6B7177]">Read<span><i
+                                    class="fa-solid fa-arrow-right"></i></span></p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-xl md:text-2xl lg:text-3xl">Shopify Blog</h1>
+                        <p class="text-lg md:text-xl lg:text-2xl text-[#6B7177]">Get all the marketing and business
+                            strategy tips you need to help you run an online business.</p>
+                        <p class="text-lg md:text-xl lg:text-2xl flex items-center gap-2 text-[#6B7177]">Read<span><i
+                                    class="fa-solid fa-arrow-right"></i></span></p>
+                    </div>
+                </div>
+            </div>
+            <div><img
+                    src="https://s3-alpha-sig.figma.com/img/7a91/c34c/21f6e2968a337933fdb2c2a788b35392?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HpYbgKulh2dC9wfzZK8rEgRkdF0OK6U3Xhvl8KO5bwtb9NpxSo5Fj~QGWqwh9RUbVHJqpw55g4Ue2zCoxOkeQ~t~t-dHa2Ny0-bwJDJ4RAHhhJLd8wj206ueR1OGMIf93kLSx23o27INlECPXkiu4x6sOqEzZ3I1Xb71OeoWG9qXUp7YkWamU62GcnbNe6557XgXUwbtqOKnu1TVGwkiNgI9KgxpO5siHW3KE6RqqCg9W21UhBrr37SOV09XP4GSNnC9wV1DQHF94DS2bmGOV49qo350h1D0jdcvOzc~917sE3bBVI395djRVyFqPCxkq6Isbe-g2pyNzNOljcLiAA__"
+                    alt="" width="100%"></div>
+        </section>
+        <section class="flex flex-col gap-4 p-5 justify-center items-center">
+            <h1 class="text-xl md:text-2xl lg:text-3xl">Grow your business here</h1>
+            <p class="md:text-xl lg:text-2xl">Whether you want to sell products down the street or around the world, we
+                have all the tools you need.</p>
+            <button
+                class="lg:w-[250px] lg:h-[65px] md:w-[200px] h-[55px] w-full bg-[#008060] rounded-md text-2xl  text-white">Start
+                free trial</button>
+        </section>
+    </main>
+    <footer class="nr flex flex-col gap-[35px] bg-[#004C3F] text-white">
+        <nav class="w-[95%] mx-auto flex justify-start items-center">
+            <ul class="flex flex-wrap items-center gap-4 text-2xl">
+                <li>About</li>
+                <li>Careers</li>
+                <li>Press and Media</li>
+                <li>Shopify Plus</li>
+                <li>Sitemap</li>
+            </ul>
+        </nav>
+        <nav class="w-[95%] mx-auto flex justify-start items-center">
+            <ul class="w-full gap-[30px] sm:gap-4 mx-auto grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 text-2xl">
+                <ul class="flex flex-col gap-4">
+                    <li>Online store</li>
+                    <li>Point of sale</li>
+                    <li>Support</li>
+                    <li>Shopify</li>
+                    <li>Sell online</li>
+                    <li>Ecommerce website</li>
+
+                </ul>
+                <ul class="flex flex-col gap-4">
+                    <li>Mobile commerce</li>
+                    <li>24/7 support</li>
+                    <li>Contact</li>
+                    <li>Examples</li>
+                </ul>
+                <ul class="flex flex-col gap-4">
+                    <li>Domain names</li>
+                    <li>Online store builder</li>
+                    <li>Features</li>
+                    <li>Shopify Help Center</li>
+                </ul>
+                <ul class="flex flex-col gap-4">
+                    <li>Partner program</li>
+                    <li>Website builder</li>
+                    <li>Shopping cart</li>
+                    <li>Dropshipping Business</li>
+                    <li>Hardware</li>
+                </ul>
+                <ul class="flex flex-col gap-4">
+                    <li>Shopify Community</li>
+                    <li>Affiliate program</li>
+                    <li>Online retail</li>
+                    <li>Ecommerce hosting</li>
+                    <li>Store themes</li>
+                    <li>API documentation</li>
+                    <li>App developers</li>
+                    <li>Free tools</li>
+                    <li>Investors</li>
+                </ul>
+                <ul class="flex flex-col gap-4">
+                    <li>Free stock photos</li>
+                    <li>Blog topics</li>
+                    <li>Websites for sale</li>
+                    <li>Community Events</li>
+                    <li>Logo Maker</li>
+                    <li>Fulfillment</li>
+                    <li>Business name generator</li>
+                    <li>Research</li>
+                    <li>Legal</li>
+                </ul>
+
+
+
+            </ul>
+        </nav>
+        <nav class="w-[95%] mx-auto flex justify-between items-center">
+            <ul class="flex gap-4 flex-wrap justify-start items-center">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-pinterest"></i></li>
+            </ul>
+            <ul class="flex gap-4 flex-wrap justify-start items-center">
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>USA</li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
